@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start":"node ./src/services/server",
+    "dev": "node  ./src/services/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
