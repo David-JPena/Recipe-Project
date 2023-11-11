@@ -1,0 +1,47 @@
+.item {
+    margin: 10px; /* Margen entre las imágenes */
+}
+
+.item img {
+    max-width: 100%; /* Ajusta el ancho máximo de las imágenes al 100% del contenedor */
+    height: 90%; /* Mantiene la proporción de aspecto de las imágenes */
+    border: 1px solid #a3a2a2; /* Agrega un borde a las imágenes (opcional) */
+    border-radius: 8px; /* Agrega bordes redondeados a las imágenes (opcional) */
+}
+
+@import '~font-awesome/css/font-awesome.min.css';
+
+/* Estilos para los íconos "Me gusta" y "Guardar" */
+.icon-like {
+    font-size: 24px;
+    margin: 0 10px; /* Separación entre los íconos (horizontal) */
+    color: #FF5733; /* Cambia el color a tu elección (por ejemplo, naranja) */
+    margin-right: 10px; /* Separación entre los íconos */
+}
+  
+.icon-save {
+    font-size: 24px; /* Tamaño de los íconos, ajusta según tus preferencias */
+    color: rgb(51, 82, 255); /* Color de los íconos, ajusta según tus preferencias */
+    margin: 0 10px; /* Separación entre los íconos (horizontal) */
+}
+
+.icon-like,
+
+
+/* Estilos para la imagen del usuario (circular) */
+.small-avatar {
+  width: 30px; /* Tamaño de la imagen del usuario */
+  height: 30px;
+  border-radius: 1000%; /* Para hacerla circular */
+  object-fit: cover; /* Ajusta el contenido de la imagen para cubrir la forma circular */
+}
+
+/* Estilos para el nombre del usuario */
+.user-info span {
+  color: #524949; /* Color del texto, ajusta según tus preferencias */
+}
+
+/* Estilos adicionales para centrar el contenido */
+.text-center {
+text-align: center;
+}

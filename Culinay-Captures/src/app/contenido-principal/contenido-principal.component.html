@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let item of items">
+          <div class="item">
+            <img [src]="item.image" alt="Imagen">
+            <h3 class="text-center">{{ item.title }}</h3>
+            <!-- Agregar foto de perfil, nombre de usuario y iconos debajo del título -->
+            <div class="user-info text-center">
+              <img src="assets/images/usuario.jpg" alt="Foto de perfil" class="small-avatar">
+              <span>{{ item.username }}</span>
+            </div>
+            <div class="action-icons mt-3 text-center">
+              <i class="icon-like fa fa-heart"></i> <!-- Ícono para "Me gusta" con clase personalizada "icon-like" -->
+              <i class="icon-save fa fa-bookmark"></i> <!-- Ícono para guardar con clase personalizada "icon-save" -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
