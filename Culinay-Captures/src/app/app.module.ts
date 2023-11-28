@@ -7,6 +7,11 @@ import { DetailsComponent } from './components/details/details.component';
 import { EncabezadoComponent } from './components/encabezado/encabezado.component';
 import { ContenidoPrincipalComponent } from './components/contenido-principal/contenido-principal.component';
 import { PieDePaginaComponent } from './components/pie-de-pagina/pie-de-pagina.component';
+import { RegistrarRecetaComponent } from './components/registrar-receta/registrar-receta.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegistrarUsuarioComponent } from './components/registrar-usuario/registrar-usuario.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,10 +19,15 @@ import { PieDePaginaComponent } from './components/pie-de-pagina/pie-de-pagina.c
     DetailsComponent,
     EncabezadoComponent,
     ContenidoPrincipalComponent,
-    PieDePaginaComponent
+    PieDePaginaComponent,
+    RegistrarRecetaComponent,
+    LoginComponent,
+    RegistrarUsuarioComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
    
     
   ],
