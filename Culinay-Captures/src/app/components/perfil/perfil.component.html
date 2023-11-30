@@ -1,1 +1,83 @@
-<p>perfil works!</p>
+<!-- profile.component.html -->
+<app-encabezado></app-encabezado>
+<div class="container mt-4 mb-4 " >
+  <div class="card" style="background-color: #f3f8fa;">
+    <div class="card-header text-center">
+      <h3>Mi Perfil</h3>
+    </div>
+    <div class="card-body">
+      <div class="row text-center align-items-center">
+        <div class="col-md-12">
+          <img src="https://lapi.com.mx/web/image/product.template/5449/image_1024?unique=b4fa6e7" alt="Imagen de perfil" class="img-fluid rounded-circle" style="max-width: 150px; margin: 0 auto;">
+        </div>
+        <div class="col-md-12 mt-3">
+          <h4>Herlita Farro Carrero</h4>
+          <p class="mb-0">herlita@tecsup.edu.pe</p>
+          <p class="mb-0">Las mejores recetas de cosina para engreir a tu familia</p>
+          <div class="col-md-12 mt-3">
+            <a routerLink="/edit-perfil" class="btn btn-danger">Editar perfil</a>
+          </div>
+          <div class="d-flex justify-content-center mt-3">
+            <div class="mx-2">
+              <p class="mb-0">1,456</p>
+              <p class="mb-0">Seguidores</p>
+            </div>
+            <div class="mx-2">
+              <p class="mb-0">46</p>
+              <p class="mb-0">Siguiendo</p>
+            </div>
+            <div class="mx-2">
+              <p class="mb-0">856</p>
+              <p class="mb-0">Me gusta</p>
+            </div>
+          </div>          
+        </div>
+        <div class="col-md-12 mt-4">
+          <button class="btn btn-danger">Mis amigos</button>
+        </div>
+        <div class="col-md-12 mt-5" style="background-color: #eaf1f4;">
+          <!-- Filas de amigos existentes -->
+          <div class="row text-center mb-3">
+            <div class="col-md-3">
+              <img src="https://acortar.link/koedn4" alt="Amigo 1" class="img-fluid rounded-circle" style="max-width: 100px; margin: 0 auto;">
+              <p>Lionel Messi Cabrera</p>
+            </div>
+            <div class="col-md-3">
+              <img src="https://vivolabs.es/wp-content/uploads/2022/03/perfil-mujer-vivo.png" alt="Amigo 2" class="img-fluid rounded-circle" style="max-width: 100px; margin: 0 auto;">
+              <p>Patricia Mejia Urbina</p>
+            </div>
+            <div class="col-md-3">
+              <img src="https://acortar.link/jcJ9zP" alt="Amigo 3" class="img-fluid rounded-circle" style="max-width: 100px; margin: 0 auto;">
+              <p>Jose Peres Salazar</p>
+            </div>
+            <div class="col-md-3">
+              <img src="https://acortar.link/mFT2NC" alt="Amigo 4" class="img-fluid rounded-circle" style="max-width: 100px; margin: 0 auto;">
+              <p>Noemi Gutierrez Peña</p>
+            </div>
+          </div>
+          <div class="row text-center mt-3">
+            <div class="col-md-3">
+              <img src="https://acortar.link/B4qznC" alt="Amigo 5" class="img-fluid rounded-circle" style="max-width: 100px; margin: 0 auto;">
+              <p>Martin Rodrigrez Pretell</p>
+            </div>
+            <div class="col-md-3">
+              <img src="https://acortar.link/rEfnq9" alt="Amigo 6" class="img-fluid rounded-circle" style="max-width: 100px; margin: 0 auto;">
+              <p>Luisa Mendoza Vera</p>
+            </div>
+            <div class="col-md-3">
+              <img src="https://acortar.link/wyehX0" alt="Amigo 7" class="img-fluid rounded-circle" style="max-width: 100px; margin: 0 auto;">
+              <p>Jhonatan Cabrera Peña</p>
+            </div>
+            <div class="col-md-3">
+              <img src="https://acortar.link/HP3Ubl" alt="Amigo 8" class="img-fluid rounded-circle" style="max-width: 100px; margin: 0 auto;">
+              <p>Maria Lopez Farro</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<app-pie-de-pagina></app-pie-de-pagina>

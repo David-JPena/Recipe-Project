@@ -1,4 +1,7 @@
 /*footer*/
+
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
 .con {
     max-width: 1200px;
     margin: 0 auto;
@@ -6,7 +9,7 @@
 }
 
 .site-footer {
-    background-color: rgb(67, 152, 180);
+    background-color: rgb(36, 107, 131);
     color: #fff;
     padding: 20px 0;
 }
@@ -25,13 +28,13 @@
 
 .footer-bo {
     padding: 20px;
-    font-size: 14px;
-    color: #0d0c0c;
+    font-size: 15px;
+    color: #fcfbfb;
     border: 1px solid rgb(44, 120, 145); /* Bordes para resaltar la ubicación de las secciones, puedes eliminar esto si no lo deseas */
 }
 
 .footer-link a {
-    color: #0d0c0c;
+    color: #f6f3f3;
     text-decoration: none;
 }
 
@@ -83,17 +86,19 @@
 .p{
     text-align: center;
     font-size: 16px;
-    color: #0d0c0c;
+    color: #fffefe;
     margin-top: 10px;
 }
+.footer-bo a {
+    color: #fff;
 
-
+}
 .footer-bo input[type="email"],
 .footer-bo textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  background-color: rgb(67, 152, 180);
+  background-color: rgb(66, 141, 167);
   border: 1px solid #f1f5f6;
   border-radius: 5px;
   box-sizing: border-box;
@@ -126,6 +131,46 @@
 .quick-contact input,
 .quick-contact textarea {
     margin-bottom: 0px;
+    
 }.in{
     margin-bottom: 15px;
 }
+
+ /* Header in the first three columns */
+.fu h2 {
+        font-size: 18px;
+        color: #fff;
+}
+
+    /* Paragraph text in the first three columns */
+.footer-link p {
+        font-size: 14px;
+}
+ /* Quick contact section styles */
+ .quick-contact input,
+ .quick-contact textarea {
+     font-size: 14px;
+     
+ }
+
+ .quick-contact button {
+     font-size: 16px;
+ }
+
+
+ .action-icons {
+     font-size: 36px;
+ }
+
+ .action-icons i {
+     margin: 0 15px;
+     color: #007bff;
+     transition: color 0.3s ease; /* Add a smooth transition effect */
+ }
+
+ .action-icons i:hover {
+     color: #0056b3; /* Change the color on hover */
+ }
+ .footer-second-s .action-icons i {
+     font-size: 1.5rem; /* Puedes ajustar este valor según tus preferencias */
+   }

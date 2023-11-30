@@ -1,47 +1,12 @@
-/* app-header.component.css */
-header {
-    background-color: rgb(42, 153, 172);
-    color: white;
-    padding: 0px;
-    text-align: center;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center; /* Alinea verticalmente el contenido del contenedor flex */
-  }
-  
-  .logo img {
-    margin-left: 10px;
-    max-height: 70px; /* Ajusta el tamaño máximo del logo según sea necesario */
-    margin-right: 10px; /* Añade un espacio entre el logo y los enlaces */
-  }
-  
-  div {
-    margin-top: 10px;
-  }
-  
-  div ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    margin-left: 60rem;
-    justify-content: center;
-    align-items: center; /* Alinea verticalmente el contenido del contenedor flex */
-  }
-  
-  div ul li {
-    margin: 0 10px;
-  }
-  
-  div ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
-    margin-top: 30px;
-  }
-  
-  div ul li a:hover {
-    border-bottom: 2px solid white;
-  }
-  
+/* app-header.component.scss */
+/* Ajustes para el logo en la esquina */
+.navbar-brand {
+  margin-right: auto; /* Empuja el logo a la esquina izquierda */
+}
+
+/* Alineación de los enlaces a la derecha */
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* Estilos adicionales según sea necesario */

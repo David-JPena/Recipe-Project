@@ -1,18 +1,33 @@
 <!-- app-header.component.html -->
-<header>
-    <div class="logo">
-      <!-- Puedes reemplazar el texto con la etiqueta de imagen o el contenido del logo que prefieras -->
-      <img src="../../../assets/images/logo.jpeg" alt="Logo de la Aplicación">
-    </div>
-    <div>
-        <ul>
-            <li><a routerLink="/">Inicio</a></li>
-            <li><a routerLink="/about">Agregar receta</a></li>
-            <li><a routerLink="/about">Perfil</a></li>
-            <!-- Agrega más enlaces según sea necesario -->
-          </ul>
+<header class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(60, 145, 169);">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">
+      <img src="../../../assets/images/logo.jpeg" alt="Logo de la Aplicación" height="50" width="180">
+    </a>
 
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold text-white mr-2" routerLink="/" style="transition: color 0.3s ease;">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold text-white mr-2" routerLink="/registrar-receta" style="transition: color 0.3s ease;">Agregar receta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold text-white mr-2" routerLink="/perfil" style="transition: color 0.3s ease;">Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold text-white mr-2" routerLink="/login" style="transition: color 0.3s ease;">Iniciar sesión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold text-white mr-2" routerLink="/registrar-usuario" style="transition: color 0.3s ease;">Registrar usuario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#" style="transition: background-color bg-primary; display: inline-block; padding: 8px 12px; border-radius: 5px;">
+            <i class="bi bi-search"></i>
+          </a>
+        </li>
+      </ul>
     </div>
-    
-  </header>
-  
+  </div>
+</header>

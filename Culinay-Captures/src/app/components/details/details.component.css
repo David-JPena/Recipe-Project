@@ -1,0 +1,98 @@
+/* contenido-principal.component.css o styles.css o styles.scss */
+
+/* Ajustar el fondo de la sección bg-secondary */
+.b {
+    background-color: #f9f1f1; /* Cambia el color de fondo según tus preferencias */
+  }
+  
+  /* Estilo para la sección "Más recetas" */
+  .text-light {
+    color: black !important; /* Cambia el color del texto a negro */
+  }
+  
+  .card.mb-4.p-1 {
+    background-color: #f8f9fa; /* Cambia el color de fondo de la tarjeta según tus preferencias */
+  }
+  
+  /* Otros estilos adicionales si es necesario */
+/* Estilos para los formularios */
+form {
+    background-color: #f8f9fa; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  label {
+    color: #495057; /* Color del texto de la etiqueta */
+  }
+  
+  textarea,
+  input[type="text"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Margen inferior */
+    border: 1px solid #8fa0b1; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  
+
+  /* Estilos para los cuadros de descripción, pasos e ingredientes */
+.card-body {
+    background-color: #fff; /* Fondo blanco para el contenido */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  
+  
+  .list-unstyled {
+    padding-left: 0; /* Elimina el espaciado izquierdo de las listas sin viñetas */
+  }
+  
+  .list-unstyled li {
+    list-style: none; /* Elimina viñetas de la lista */
+    margin-bottom: 10px; /* Margen inferior entre elementos de la lista */
+  }
+  
+  /* Estilos para los botones dentro del contenido */
+  .btn-danger {
+    background-color: #dc3545; /* Color de fondo rojo */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cursor apuntador al pasar el ratón */
+  }
+  
+  /* Cambiar estilo del cursor al pasar sobre el botón */
+  .btn-danger:hover {
+    background-color: #c82333; /* Color de fondo rojo oscuro al pasar el ratón */
+  }
+  
+  /* Estilos para la fila de amigos */
+  .row.text-center.mb-3,
+  .row.text-center.mt-3 {
+    margin-bottom: 20px; /* Margen inferior entre filas de amigos */
+  }
+  
+  .row.text-center.mb-3 img,
+  .row.text-center.mt-3 img {
+    max-width: 100px; /* Ancho máximo de las imágenes de amigos */
+    margin: 0 auto; /* Centrar las imágenes */
+  }
+  
+  .row.text-center.mb-3 p,
+  .row.text-center.mt-3 p {
+    margin-top: 10px; /* Margen superior para los nombres de amigos */
+  }
+  
+  /* Estilos para el fondo del cuadro de amigos */
+  .row.text-center.mt-5 {
+    background-color: #c3d9e2; /* Color de fondo azul claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
