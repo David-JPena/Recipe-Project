@@ -1,0 +1,30 @@
+/* app-encabezado.component.css */
+header {
+    /* Estilos para el encabezado */
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Para centrar horizontalmente */
+    margin: 25px 0;
+   
+  }
+  
+  input {
+  
+    padding: 10px; /* Aumenta el espacio interno */
+    width: 450px; /* Ancho del input */
+  }
+  
+  button {
+    margin-left: 10px;
+    padding: 10px 20px; /* Aumenta el espacio interno */
+    background-color: #758390;
+    color: #fff;
+    border: none;
+    width: 6.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

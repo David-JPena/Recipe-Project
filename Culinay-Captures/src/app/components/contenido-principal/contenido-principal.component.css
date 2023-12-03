@@ -45,3 +45,50 @@
 .text-center {
 text-align: center;
 }
+
+
+/* tu-archivo.component.css */
+.item {
+  position: relative;
+  overflow: hidden;
+}
+
+.item img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover img {
+  transform: scale(1.1);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.small-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.action-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.action-icons i {
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.action-icons i:hover {
+  color: #007bff; /* Cambia el color al pasar el cursor */
+}

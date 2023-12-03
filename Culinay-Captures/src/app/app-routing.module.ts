@@ -9,6 +9,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegistrarUsuarioComponent } from './components/registrar-usuario/registrar-usuario.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { EditPerfilComponent } from './components/edit-perfil/edit-perfil.component';
+import { AddAmigosComponent } from './components/add-amigos/add-amigos.component';
 
 const routes: Routes = [
   { path: '', component: ContenidoPrincipalComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'edit-perfil', component: EditPerfilComponent },
   { path: 'contenido-principal', component: ContenidoPrincipalComponent },
   { path: 'details/: id', component: DetailsComponent },
+  { path: 'add-amigos', component: AddAmigosComponent },
   { path: '', redirectTo: '/profile', pathMatch: 'full' },
   { path: '', redirectTo: '/details', pathMatch: 'full' },
 ];

@@ -1,0 +1,21 @@
+/* Agregar bordes a las imágenes */
+.bordered-image {
+    border: 2px solid #5b5b5c; /* Puedes cambiar el color según tus preferencias */
+    border-radius: 10px;
+}
+  
+  /* Agregar animaciones usando animate.css (asegúrate de incluir la biblioteca animate.css en tu proyecto) */
+.animated {
+    animation-duration: 1s; /* Duración de la animación */
+}
+  
+.animate__animated {
+    animation-fill-mode: both;
+}
+  
+.animate__zoomIn {
+    animation-name: zoomIn; /* Nombre de la animación de zoomIn de animate.css */
+}
+.rounded-image {
+    border-radius: 20px; /* Puedes ajustar el valor según tus preferencias */
+}  

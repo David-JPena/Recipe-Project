@@ -16,6 +16,9 @@ import { RegistrarUsuarioComponent } from './components/registrar-usuario/regist
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EditPerfilComponent } from './components/edit-perfil/edit-perfil.component';
+import { AddAmigosComponent } from './components/add-amigos/add-amigos.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { EditPerfilComponent } from './components/edit-perfil/edit-perfil.compon
     LoginComponent,
     RegistrarUsuarioComponent,
     PerfilComponent,
-    EditPerfilComponent
+    EditPerfilComponent,
+    AddAmigosComponent,
+    BuscadorComponent,
+   
   ],
   imports: [
     BrowserModule,

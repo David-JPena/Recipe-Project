@@ -3,3 +3,5 @@
 /* styles.css */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import '~bootstrap-icons/font/bootstrap-icons.css';
+/* styles.css o tu-archivo-de-estilos.component.css */
+@import "~animate.css/animate.min.css";
