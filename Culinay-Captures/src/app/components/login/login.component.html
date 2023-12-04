@@ -1,1 +1,34 @@
-<p>login works!</p>
+<!-- login.component.html -->
+
+<section class="body card shadow">
+    <div class="card-body">
+      <h2 class="card-title text-center mb-4 mt-2">Iniciar Sesión</h2>
+      <form (submit)="loginUser()">
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo:</label>
+          <input type="email" id="correo" [(ngModel)]="correo" name="correo" class="form-control" placeholder="Ingrese su correo electrónico" required>
+        </div>
+  
+        <div class="mb-3">
+          <label for="contrasena" class="form-label">Contraseña:</label>
+          <div class="input-group">
+            <input [type]="ShowPassword ? 'text' : 'password'" id="contrasena" [(ngModel)]="contrasena" name="contrasena" class="form-control" placeholder="Ingrese su contraseña" required>
+            <div class="input-group-text cursor-pointer" (click)="toggleShowPassword()">
+              <i class="fas" [ngClass]="ShowPassword ? 'fa-eye-slash' : 'fa-eye'"></i>
+            </div>
+          </div>
+        </div>
+  
+        <div class="mb-3 form-check">
+          <input class="form-check-input" type="checkbox" id="check">
+          <label class="form-check-label" for="check">Recordar</label>
+        </div>
+  
+        <div class="row">
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>

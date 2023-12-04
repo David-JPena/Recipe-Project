@@ -11,29 +11,29 @@
           <img src="https://lapi.com.mx/web/image/product.template/5449/image_1024?unique=b4fa6e7" alt="Imagen de perfil" class="img-fluid rounded-circle" style="max-width: 150px; margin: 0 auto;">
         </div>
         <div class="col-md-12 mt-3">
-          <h4>Herlita Farro Carrero</h4>
-          <p class="mb-0">herlita@tecsup.edu.pe</p>
+          <h4>Yaseny Mendoza Vera</h4>
+          <p class="mb-0">Yaseny@tecsup.edu.pe</p>
           <p class="mb-0">Las mejores recetas de cosina para engreir a tu familia</p>
           <div class="col-md-12 mt-3">
             <a routerLink="/edit-perfil" class="btn btn-danger">Editar perfil</a>
           </div>
           <div class="d-flex justify-content-center mt-3">
-            <div class="mx-2">
+            <div class="mx-2" (click)="mostrarSeguidores()">
               <p class="mb-0">1,456</p>
               <p class="mb-0">Seguidores</p>
             </div>
-            <div class="mx-2">
+            <div class="col-md-2 mx-2" (click)="mostrarSeguidos()">
               <p class="mb-0">46</p>
               <p class="mb-0">Siguiendo</p>
             </div>
-            <div class="mx-2">
-              <p class="mb-0">856</p>
+            <div class="mx-2" (click)="mostrarLike()">
+              <p class="mb-0">30.6k</p>
               <p class="mb-0">Me gusta</p>
             </div>
           </div>          
         </div>
         <div class="col-md-12 mt-4">
-          <a routerLink="/add-amigos" class="btn btn-danger">Agregar amigos</a>
+          <a routerLink="/add-amigos" class="btn btn-danger">Seguir amigos</a>
         </div>
         <div class="col-md-12 mt-5" style="background-color: #e7eff9;">
           <!-- Filas de amigos existentes -->

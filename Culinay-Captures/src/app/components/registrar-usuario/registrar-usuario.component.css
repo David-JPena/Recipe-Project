@@ -1,0 +1,15 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+.body{
+    width: 450px;
+    position: fixed;
+    top: 50%;
+    height: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: #263238;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}

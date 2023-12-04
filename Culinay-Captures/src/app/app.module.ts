@@ -18,6 +18,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { EditPerfilComponent } from './components/edit-perfil/edit-perfil.component';
 import { AddAmigosComponent } from './components/add-amigos/add-amigos.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { ListaSeguidoresComponent } from './components/lista-seguidores/lista-seguidores.component';
+import { ListaSiguiendoComponent } from './components/lista-siguiendo/lista-siguiendo.component';
+import { ListaLikeComponent } from './components/lista-like/lista-like.component';
 
 
 @NgModule({
@@ -34,6 +37,9 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
     EditPerfilComponent,
     AddAmigosComponent,
     BuscadorComponent,
+    ListaSeguidoresComponent,
+    ListaSiguiendoComponent,
+    ListaLikeComponent,
    
   ],
   imports: [

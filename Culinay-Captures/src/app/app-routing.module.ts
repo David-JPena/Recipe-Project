@@ -10,6 +10,9 @@ import { RegistrarUsuarioComponent } from './components/registrar-usuario/regist
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { EditPerfilComponent } from './components/edit-perfil/edit-perfil.component';
 import { AddAmigosComponent } from './components/add-amigos/add-amigos.component';
+import { ListaSeguidoresComponent } from './components/lista-seguidores/lista-seguidores.component';
+import { ListaSiguiendoComponent } from './components/lista-siguiendo/lista-siguiendo.component';
+import { ListaLikeComponent } from './components/lista-like/lista-like.component';
 
 const routes: Routes = [
   { path: '', component: ContenidoPrincipalComponent },
@@ -23,6 +26,9 @@ const routes: Routes = [
   { path: 'add-amigos', component: AddAmigosComponent },
   { path: '', redirectTo: '/profile', pathMatch: 'full' },
   { path: '', redirectTo: '/details', pathMatch: 'full' },
+  { path: 'lista-siguiendo', component: ListaSiguiendoComponent },
+  { path: 'lista-seguidores', component: ListaSeguidoresComponent },
+  { path: 'lista-like', component: ListaLikeComponent },
 ];
 
 

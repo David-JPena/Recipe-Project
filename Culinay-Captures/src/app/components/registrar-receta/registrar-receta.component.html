@@ -1,1 +1,59 @@
-<p>registrar-receta works!</p>
+<app-encabezado></app-encabezado>
+<div class="contenedor" style="background-color: rgb(247, 250, 250);">
+    <div class="container form-container" style="background-color: rgb(199, 217, 236);">
+        <h2 class="form-title">Registrar Receta</h2>
+      
+        <input type="file" id="imagenInput" (change)="seleccionarImagen()" style="display: none">
+        <label for="imagenInput" class="file-label">Seleccionar Imagen</label>
+        <img *ngIf="imagenSeleccionada" [src]="imagenSeleccionada" alt="Imagen de receta" height="100">
+      
+        <div class="form-group">
+          <label for="titulo" class="form-label">Título de la receta:</label>
+          <input type="text" id="titulo" name="titulo" [(ngModel)]="receta.titulo" class="form-control" placeholder="Ingrese el titulo de la receta" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="procedencia" class="form-label">Procedencia de la receta:</label>
+          <input type="text" id="procedencia" name="procedencia" [(ngModel)]="receta.procedencia" class="form-control" placeholder="Ingrese la procedencia de la receta" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="personas" class="form-label">Número de personas:</label>
+          <input type="number" id="personas" name="personas" [(ngModel)]="receta.personas" class="form-control" placeholder="Ingrese el numero de personas" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="tiempo" class="form-label">Tiempo de preparación (minutos):</label>
+          <input type="number" id="tiempo" name="tiempo" [(ngModel)]="receta.tiempo" class="form-control" placeholder="Ingrese el timepo de preparación" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="categoria" class="form-label">Categoría:</label>
+          <select id="categoria" name="categoria" [(ngModel)]="receta.categoria" class="form-control" required>
+            <option *ngFor="let categoria of categorias" [value]="categoria">{{ categoria }}</option>
+          </select>
+        </div>
+      
+        <div class="form-group">
+            <label for="ingredientes" class="form-label">Ingredientes:</label>
+            <div *ngFor="let ingrediente of ingredientes; let i = index">
+              <input type="text" [(ngModel)]="ingredientes[i]" placeholder="Ingrediente {{ i + 1 }}" class="form-control">
+            </div>
+            <input type="text" [(ngModel)]="nuevoIngrediente" placeholder="Ingrese los ingredientes" class="form-control">
+            <button (click)="agregarElemento('Ingrediente')" class="btn btn-primary">Agregar Ingrediente</button>
+        </div>
+        
+        <div class="form-group">
+            <label for="pasos" class="form-label">Pasos:</label>
+            <div *ngFor="let paso of pasos; let i = index">
+              <input type="text" [(ngModel)]="pasos[i]" placeholder="Paso {{ i + 1 }}" class="form-control">
+            </div>
+            <input type="text" [(ngModel)]="nuevoPaso" placeholder="ingrese los pasos" class="form-control">
+            <button (click)="agregarElemento('Paso')" class="btn btn-primary">Agregar Paso</button>
+        </div>
+      
+        <button (click)="publicarReceta()" class="btn btn-primary">Publicar</button>
+    </div>
+    
+</div>
+<app-pie-de-pagina></app-pie-de-pagina>

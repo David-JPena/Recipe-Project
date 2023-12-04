@@ -1,0 +1,17 @@
+<!-- lista-siguiendo.component.html -->
+<app-encabezado></app-encabezado>
+
+<h1 class="text-center mt-5">Siguiendo</h1>
+<app-buscador></app-buscador>
+<div class="col-md-8 mt-4 mb-4 mx-auto border rounded p-3" style="background-color: #eaf1f4;">
+  <div class="row text-center mb-3">
+    <div *ngFor="let usuario of usuarios; let i = index" class="col-md-4 mb-3">
+      <img src="{{usuario.imagen}}" alt="{{usuario.nombre}}" class="img-fluid rounded-circle" style="max-width: 150px; margin: 0 auto;">
+      <p>{{usuario.nombre}}</p>
+      <button *ngIf="usuario.siguiendo" class="btn btn-outline-secondary btn-sm" (click)="dejarDeSeguir(i)">Siguiendo</button>
+      <button *ngIf="!usuario.siguiendo" class="btn btn-primary btn-sm" style="width: 70px;" (click)="seguir(i)">Seguir</button>
+    </div>
+  </div>
+</div>
+
+<app-pie-de-pagina></app-pie-de-pagina>

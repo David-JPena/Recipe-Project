@@ -1,5 +1,6 @@
 /* app-encabezado.component.css */
 header {
+  
     /* Estilos para el encabezado */
   }
   
@@ -27,4 +28,6 @@ header {
     border-radius: 5px;
     cursor: pointer;
   }
+
+ 
   
